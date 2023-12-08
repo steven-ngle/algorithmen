@@ -4,7 +4,8 @@ public class PeasantMultiply {
         System.out.println(PeasantMultiply(7, 9));
     }
 
-    public static int PeasantMultiply(int x, int y) {
+    private static int PeasantMultiply(int x, int y) {
+
         int prod = 0;
         while (x > 0) {
             if (x % 2 == 1) {
@@ -14,6 +15,7 @@ public class PeasantMultiply {
             x = Math.floorDiv(x, 2);
             y += y;
         }
+
         return prod;
     }
 }

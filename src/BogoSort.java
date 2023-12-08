@@ -6,14 +6,14 @@ import java.util.Random;
 public class BogoSort {
 
     public static void main(String[] args) {
-        ArrayList<Integer> arrList = new ArrayList<Integer>();
+        ArrayList<Integer> arrList = new ArrayList<>();
         randomFill(arrList);
         System.out.println(arrList);
         bogoSort(arrList);
         System.out.println(arrList);
     }
 
-    public static void randomFill(ArrayList arrList) {
+    private static void randomFill(ArrayList arrList) {
 
         Random r = new Random();
 
@@ -22,12 +22,12 @@ public class BogoSort {
         }
     }
 
-    public static void bogoSort(ArrayList arrList) {
+    private static void bogoSort(ArrayList arrList) {
         // schnellster Algorithmus
         ArrayList<Integer>arrList2 = new ArrayList<Integer>(arrList);
         arrList2.sort(Comparator.naturalOrder());
 
-        while (arrList.equals(arrList2) != true) {
+        while (!arrList.equals(arrList2)) {
             // O((n+1)!)
             Collections.shuffle(arrList);
         }

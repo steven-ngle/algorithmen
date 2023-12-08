@@ -11,15 +11,14 @@ public class InsertionSort {
         System.out.println(Arrays.toString(arr));
     }
 
-    public static int[] randomFill(int[] arr) {
+    private static void randomFill(int[] arr) {
         Random r = new Random();
         for (int i = 0; i < arr.length; i++) {
             arr[i] = r.nextInt(100);
         }
-        return arr;
     }
 
-    public static int[] insertionSort(int[] arr) {
+    private static void insertionSort(int[] arr) {
         // arr ist array der Länge n
         for (int j = 1; j < arr.length; j++) {
             int key = arr[j]; //arr[j] in arr[1...j-1] einfuegen
@@ -31,6 +30,5 @@ public class InsertionSort {
                 arr[i + 1] = key;
             }
         }
-        return arr;
     }
 }

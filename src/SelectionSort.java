@@ -11,15 +11,14 @@ public class SelectionSort {
         System.out.println(Arrays.toString(arr));
     }
 
-    public static int[] randomFill(int[] arr) {
+    private static void randomFill(int[] arr) {
         Random r = new Random();
         for (int i = 0; i < arr.length; i++) {
             arr[i] = r.nextInt(100);
         }
-        return arr;
     }
 
-    public static int[] selectionSort(int[] arr) {
+    private static void selectionSort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             int min = i;
             for (int j = i + 1; j < arr.length; j++) {
@@ -32,6 +31,5 @@ public class SelectionSort {
             arr[i] = arr[min];
             arr[min] = x;
         }
-        return arr;
     }
 }

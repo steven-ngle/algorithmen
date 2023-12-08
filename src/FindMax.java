@@ -10,14 +10,13 @@ public class FindMax {
         System.out.println(findMax(arr));
     }
 
-    public static int[] randomFill(int[] arr) {
+    private static void randomFill(int[] arr) {
         Random r = new Random();
         for (int i = 0; i < arr.length; i++) {
             arr[i] = r.nextInt(100);
         }
-        return arr;
     }
-    public static int findMax(int[] arr) {
+    private static int findMax(int[] arr) {
         int max = arr[0];
 
         for (int i = 1; i < arr.length; i++) {

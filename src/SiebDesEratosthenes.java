@@ -7,7 +7,7 @@ public class SiebDesEratosthenes {
         System.out.println(Arrays.toString(Eratosthenes(10)));
     }
 
-    public static boolean[] Eratosthenes(int num) {
+    private static boolean[] Eratosthenes(int num) {
 
         boolean[] isPrime = new boolean[num - 1];
 
