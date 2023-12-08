@@ -4,7 +4,7 @@ public class EuklidsAlorithm {
         System.out.println(ggT(60, 24));
     }
 
-    public static int ggT(int m, int n) {
+    private static int ggT(int m, int n) {
 
         int r = 0;
 

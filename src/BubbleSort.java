@@ -11,7 +11,7 @@ public class BubbleSort {
         System.out.println(Arrays.toString(arr));
     }
 
-    public static void randomFill(int[] arr) {
+    private static void randomFill(int[] arr) {
         // Erstellt ein Array mit zufälligen Zahlen zwischen 0 und 99
         Random r = new Random();
 
@@ -22,10 +22,10 @@ public class BubbleSort {
 
     /**
      * Sortiert ein Array mithilfe des Bubble Sort Algorithmus.
+     *
      * @param arr Das zu sortierende Array.
-     * @return Das sortierte Array.
      */
-    public static int[] bubbleSort(int[] arr) {
+    private static void bubbleSort(int[] arr) {
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
@@ -37,6 +37,5 @@ public class BubbleSort {
                 }
             }
         }
-        return arr;
     }
 }
