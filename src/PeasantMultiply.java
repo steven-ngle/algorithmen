@@ -1,10 +1,10 @@
 public class PeasantMultiply {
 
     public static void main(String[] args) {
-        System.out.println(PeasantMultiply(7, 9));
+        System.out.println(peasantMultiply(7, 9));
     }
 
-    private static int PeasantMultiply(int x, int y) {
+    private static int peasantMultiply(int x, int y) {
 
         int prod = 0;
         while (x > 0) {
