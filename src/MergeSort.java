@@ -76,12 +76,10 @@ public class MergeSort {
         }
     }
 
-    private static int[] randomFill(int[] arr) {
+    private static void randomFill(int[] arr) {
         Random r = new Random();
         for (int i = 0; i < arr.length; i++) {
             arr[i] = r.nextInt(100);
         }
-
-        return arr;
     }
 }
